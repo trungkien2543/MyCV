@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trần Khánh Duy</title>
+<style>
+	body {
+		-webkit-user-select: none; /* Safari */
+		-moz-user-select: none; /* Firefox */
+		-ms-user-select: none; /* IE 10+ */
+		user-select: none; /* Standard syntax */
+	}
+    .container {
+        position: relative;
+        display: flex;
+    }
+    .div1 {
+    	display: inline-block;
+        margin-left: 15%;
+        position: fixed;
+        width: 20%;
+        overflow: hidden; /* Chặn hình ảnh vượt ra khỏi khung div */
+        background-color: lightblue;
+    }
+    .div1 img {
+        width: 70%;
+        margin-top: 5%;
+        margin-left: 15%;
+        height: auto;
+        border-radius: 50%; /* Tạo khung hình tròn */
+        display: block; /* Đảm bảo hình ảnh nằm giữa div */
+    }
+    .div2 {
+        margin-left: 21%; /* Khoảng cách để tránh chồng lên nhau */
+        width: 50%;
+        height: 1600px;
+    }
+    .div_1 {
+        width: 15%;
+        height: 100%;
+    }
+    @media only screen and (max-width: 800px) {
+    	.container {
+    		display: grid;
+    	}
+		.div1 {
+        	position: relative;
+        	margin-left: 0%;
+			width: 100%;
+		}
+		.div2 {
+        	position: relative;
+        	margin-left: 0%;
+			width: 100%;
+		}
+		.div_1 {
+        	position: relative;
+			width: 0%;
+		}
+	}
+</style>
+</head>
+<body>
+    <div class="container">
+    	<div class="div_1"></div>
+        <div class="div1">
+            <!-- Thêm hình ảnh vào div1 -->
+            <img src="img/WIN_20240306_13_54_05_Pro.jpg" alt="Ảnh" />
+            <h1>Thằng dở hơi này tên Duy</h1>
+            <h2>Why Learn Programming?</h2>
+            <p>Learning programming can open up a world of opportunities. Here are a few reasons why you should consider learning programming:</p>
+            <ul>
+                <li><strong>Career Opportunities:</strong> Programming skills are in high demand across various industries, offering lucrative career options.</li>
+                <li><strong>Problem-Solving Skills:</strong> Programming teaches you how to break down complex problems into smaller, manageable tasks.</li>
+                <li><strong>Creativity:</strong> Programming allows you to bring your ideas to life and create innovative solutions to real-world problems.</li>
+                <li><strong>Personal Development:</strong> Learning programming can enhance your logical thinking, attention to detail, and ability to learn new technologies.</li>
+            </ul>
+            <p>Whether you're interested in web development, mobile app development, data science, or cybersecurity, learning programming is a valuable skill that can pave the way for a successful career.</p>
+        
+        </div>
+        <div class="div2">
+        	
+    		<h2>My Skills</h2>
+            <p>Here are some of my skills:</p>
+            <ul>
+                <li><strong>Advanced Java:</strong> I have a strong command of Java programming language, including advanced concepts such as multithreading, networking, and GUI programming.</li>
+                <li><strong>Basic Unity:</strong> I have basic knowledge of Unity game development platform, including game object manipulation, basic scripting, and scene creation.</li>
+                <li><strong>Web Development:</strong> I am proficient in HTML, CSS, and JavaScript, and have experience building responsive and interactive websites.</li>
+                <li><strong>Database Management:</strong> I have experience working with SQL databases, including MySQL and PostgreSQL.</li>
+                <li><strong>Version Control:</strong> I am familiar with Git and GitHub, and use version control for managing my projects.</li>
+                <li><strong>Problem Solving:</strong> I have strong problem-solving skills and enjoy tackling challenging programming problems.</li>
+                <li><strong>Continuous Learning:</strong> I am committed to continuous learning and staying updated with the latest technologies and trends in the field of programming.</li>
+            </ul>
+            <p>These skills have been developed through self-study, projects, and practical experience.</p>
+        	<p>Here are my project: </p>
+        	<a href="">
+        		<!-- Sử dụng thẻ <img> để chèn icon Facebook -->
+        		<img src="img/course.png" alt="Course" width="100%">
+    		</a>
+    		<br><br>
+    		<a href="https://web.facebook.com/profile.php?id=100013906990889">
+        		<!-- Sử dụng thẻ <img> để chèn icon Facebook -->
+        		<img src="img/icons8-facebook-48.png" alt="Facebook của tôi" width="55" height="55">
+    		</a>
+    		<a href="https://twitter.com/duykhnh22998254">
+        		<!-- Sử dụng thẻ <img> để chèn icon Facebook -->
+        		<img src="img/icons8-twitterx-50.png" alt="Twitter của tôi">
+    		</a>
+        </div>
+    </div>
+</body>
+</html>
