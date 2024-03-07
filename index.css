@@ -44,6 +44,17 @@ body {
     margin: 0 30px; /* Cách đều nhau giữa các mục danh sách */
     
 }
+.div1 ul li a {
+    display: inline-block; /* Để có thể áp dụng transform */
+    overflow: hidden; /* Loại bỏ viền của hình ảnh khi phóng to */
+    transition: transform 0.3s; /* Hiệu ứng chuyển đổi scale trong 0.3 giây */
+}
+
+.div1 ul li a:hover img {
+    transform: scale(1.1); /* Phóng to hình ảnh khi hover */
+}
+
+
 .div2 {
     margin-left: 27%; /* Khoảng cách để tránh chồng lên nhau */
     width: 100%;
@@ -67,6 +78,11 @@ body {
     height: auto; /* Đảm bảo tỷ lệ hình ảnh không bị biến dạng */
 }
 
+
+
+.project p{
+    padding-left: 30px;
+}
 
 .div_1 {
     width: 15%;
