@@ -4,103 +4,97 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lê Trung Kiên</title>
-<style>
-	body {
-		-webkit-user-select: none; /* Safari */
-		-moz-user-select: none; /* Firefox */
-		-ms-user-select: none; /* IE 10+ */
-		user-select: none; /* Standard syntax */
-	}
-    .container {
-        position: relative;
-        display: flex;
-    }
-    .div1 {
-    	display: inline-block;
-        position: fixed;
-        width: 34%;
-        overflow: hidden; /* Chặn hình ảnh vượt ra khỏi khung div */
-        background-color: lightblue;
-    }
-    .div1 img {
-        width: 70%;
-        margin-top: 5%;
-        margin-left: 15%;
-        height: auto;
-        border-radius: 50%; /* Tạo khung hình tròn */
-        display: block; /* Đảm bảo hình ảnh nằm giữa div */
-    }
-    .div2 {
-        margin-left: 21%; /* Khoảng cách để tránh chồng lên nhau */
-        width: 50%;
-        height: 1600px;
-    }
-    .div_1 {
-        width: 15%;
-        height: 100%;
-    }
-    @media only screen and (max-width: 800px) {
-    	.container {
-    		display: grid;
-    	}
-		.div1 {
-        	position: relative;
-        	margin-left: 0%;
-			width: 100%;
-		}
-		.div2 {
-        	position: relative;
-        	margin-left: 0%;
-			width: 100%;
-		}
-		.div_1 {
-        	position: relative;
-			width: 0%;
-		}
-	}
-</style>
+<link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="container">
     	<div class="div_1"></div>
         <div class="div1">
+            <h1 id="MyName">LÊ TRUNG KIÊN</h1>
             <!-- Thêm hình ảnh vào div1 -->
-            <img src="img/Avatar.jpg" alt="Ảnh" />
+            <img id="Avatar" src="img/Avatar.jpg" alt="Ảnh" />
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100032413416203">
+                    <!-- Sử dụng thẻ <img> để chèn icon Facebook -->
+                        <img src="img/icons8-facebook-48.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.overleaf.com/read/rkhvthwwnpzp#9bcbd1">
+                    <!-- Sử dụng thẻ <img> để chèn icon Facebook -->
+                        <img src="img/icons8-resume-48.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/trungkien2543">
+                    <!-- Sử dụng thẻ <img> để chèn icon Facebook -->
+                        <img src="img/icons8-github-48.png">
+                    </a>
+                </li>
+            </ul>
+            
             <h1>I am currently a student at Sai Gon University, majoring in Software Engineer.</h1>
             <h2>Email: trungkien1862@gmail.com</h2>
             <h2>Phone Number: 0931261009</h2>
-            <p></p>
-            
         </div>
         <div class="div2">
-        	
-    		<h2>My Skills</h2>
-            <p>Here are some of my skills:</p>
-            <ul>
-                <li><strong>Advanced Java:</strong> I have a strong command of Java programming language, including advanced concepts such as multithreading, networking, and GUI programming.</li>
-                <li><strong>Basic Unity:</strong> I have basic knowledge of Unity game development platform, including game object manipulation, basic scripting, and scene creation.</li>
-                <li><strong>Web Development:</strong> I am proficient in HTML, CSS, and JavaScript, and have experience building responsive and interactive websites.</li>
-                <li><strong>Database Management:</strong> I have experience working with SQL databases, including MySQL and PostgreSQL.</li>
-                <li><strong>Version Control:</strong> I am familiar with Git and GitHub, and use version control for managing my projects.</li>
-                <li><strong>Problem Solving:</strong> I have strong problem-solving skills and enjoy tackling challenging programming problems.</li>
-                <li><strong>Continuous Learning:</strong> I am committed to continuous learning and staying updated with the latest technologies and trends in the field of programming.</li>
-            </ul>
-            <p>These skills have been developed through self-study, projects, and practical experience.</p>
-        	<p>Here are my project: </p>
-        	<a href="">
-        		<!-- Sử dụng thẻ <img> để chèn icon Facebook -->
-        		<img src="img/course.png" alt="Course" width="100%">
-    		</a>
-    		<br><br>
-    		<a href="https://web.facebook.com/profile.php?id=100013906990889">
-        		<!-- Sử dụng thẻ <img> để chèn icon Facebook -->
-        		<img src="img/icons8-facebook-48.png" alt="Facebook của tôi" width="55" height="55">
-    		</a>
-    		<a href="https://twitter.com/duykhnh22998254">
-        		<!-- Sử dụng thẻ <img> để chèn icon Facebook -->
-        		<img src="img/icons8-twitterx-50.png" alt="Twitter của tôi">
-    		</a>
+            <div class="sub_div2">
+                <h1>My Skills</h1>
+                <p>Here are some of my skills:</p>
+                <ul>
+                    <li><strong>Advanced Java:</strong> I have a strong command of Java programming language, including advanced concepts such as multithreading, networking, and GUI programming.</li>
+                    <li><strong>Basic Unity:</strong> I have basic knowledge of Unity game development platform, including game object manipulation, basic scripting, and scene creation.</li>
+                    <li><strong>Web Development:</strong> I am proficient in HTML, CSS, JavaScript and PHP, and have experience building responsive and interactive websites.</li>
+                    <li><strong>Database Management:</strong> I have experience working with SQL databases, including MySQL and PostgreSQL.</li>
+                    <li><strong>Version Control:</strong> I am familiar with Git and GitHub, and use version control for managing my projects.</li>
+                    <li><strong>Problem Solving:</strong> I have strong problem-solving skills and enjoy tackling challenging programming problems.</li>
+                    <li><strong>Continuous Learning:</strong> I am committed to continuous learning and staying updated with the latest technologies and trends in the field of programming.</li>
+                </ul>
+                <p>These skills have been developed through self-study, projects, and practical experience.</p>
+            </div>
+
+            <div class="sub_div2">
+                <h1>My project</h1>
+                <div class="project">
+                    <h2>Manage Course</h2>
+                    <p>
+                        Course management software with basic functions such as: teaching assignment, recording learning results,... Bring solutions to support managers to save working time and increase accuracy
+                    </p>
+                    <a href="https://github.com/katkt123/QuanLyCourse">
+                        <!-- Sử dụng thẻ <img> để chèn icon Facebook -->
+                        <img src="img/Course.png" alt="Course" width="100%">
+                    </a>
+                    <br><br>
+                </div>
+                <div class="project">
+                    <h2>Manage TrafficSign</h2>
+                    <p>
+                        Traffic sign recognition programs are often complex and installed on systems with large processors and high-quality cameras.The goal of the report is to help us manage signage classification and identification 
+                    </p>
+                    <a href="">
+                        <!-- Sử dụng thẻ <img> để chèn icon Facebook -->
+                        <img src="img/python.png" alt="Course" width="100%">
+                    </a>
+                    <!-- Sử dụng thẻ <img> để chèn icon Facebook -->
+                    <img src="img/python2.png" alt="Course" width="100%">
+                    <br><br>
+                </div>
+                <div class="project">
+                    <h2>Manage LaptopStore</h2>
+                    <p>
+                        The main goal of the project is to build a simple yet powerful store management application, capable of managing product information, customer management and purchase transactions, as well as providing features to support warehouse management, ordering and revenue statistics.
+                    </p>
+                    <a href="">
+                        <!-- Sử dụng thẻ <img> để chèn icon Facebook -->
+                        <img src="img/laptop.png" alt="Course" width="100%">
+                    </a>
+                    <br><br>
+                </div>
+
+            </div>
         </div>
+        
     </div>
 </body>
 </html>
